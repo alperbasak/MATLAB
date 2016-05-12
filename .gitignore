@@ -4,3 +4,4 @@
 *.zip
 *.xlsx
 beacon4x4/Utilities/mainFunc.m
+beacon4x4/Input Data/referenceGrid.m
