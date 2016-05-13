@@ -4,11 +4,23 @@ for i=1:length(comparement)
     end
 end
 
-MAlen=38;
+% MAlen=38;
 N=3;
 
 Z(:,1)=round(StandardKalmanFilter(X,MAlen,N));
 Z(:,2)=round(StandardKalmanFilter(Y,MAlen,N));
+
+%% For maxwinlength
+l1=find(isnan(Z(:,1))==1);
+l2=find(isnan(Z(:,2))==1);
+if ~isempty(find(isnan(Z(:,1))==1, 1))
+Z(l1,1)=0;
+end
+if ~isempty(find(isnan(Z(:,2))==1, 1))
+Z(l2,2)=0;
+end
+
+%%
 
 
 for i=MAlen+N-2:length(Z)
