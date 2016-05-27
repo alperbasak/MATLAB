@@ -4,7 +4,7 @@ for k=1:length(readData)
         options = gaoptimset;
         %% Modify options setting
         options = gaoptimset(options,'Display', 'off');
-%         options = gaoptimset(options,'PlotFcns', @plotPop );
+%          options = gaoptimset(options,'PlotFcns', @plotPop );
         [x,fval,exitflag,output,population,score] = ...
             ga(@fitnessFunc,2,[],[],[],[],[1 1],[size(gridFormat,1) size(gridFormat,2)],[],[],options);
         R1=round(x(1));

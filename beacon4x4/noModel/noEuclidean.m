@@ -1,5 +1,6 @@
 %% No model Euclidean matching
 for i=1:length(readData)
+    maxRssiFilter(i).Grids=[];
     if length(readData(i).SortedData)>1
         maxRssiFilter(i).Grids=1:length(actTime2);
         for j=1:length(maxRssiFilter(i).Grids)
