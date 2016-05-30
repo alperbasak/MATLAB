@@ -1,6 +1,6 @@
 for MAlen=1:120
         disp(MAlen)
-        load('C:\Users\AHMET.BASAK\Documents\MATLAB\beacon4x4\Input Data\BBBCwoKalman.mat');
+        load('C:\Users\AHMET.BASAK\Documents\MATLAB\beacon4x4\Input Data\BBBCEucwoKalman.mat');
         KalmanFilterModel
         resultStatistics
         maxPercentage(MAlen,N)=percen;
