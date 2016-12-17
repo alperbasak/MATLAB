@@ -6,3 +6,10 @@
 beacon4x4/Utilities/mainFunc.m
 beacon4x4/Input Data/referenceGrid.m
 beacon4x4/Input Data/referenceGrid.m
+GA - Route Opt/create_permutations.m
+GA - Route Opt/crossover_permutation.m
+GA - Route Opt/mapping.m
+GA - Route Opt/mutate_permutation.m
+GA - Route Opt/route_fitness.m
+GA - Route Opt/route_plot.m
+GA - Route Opt/turkiye.jpg
