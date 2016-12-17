@@ -4,7 +4,7 @@ for i=1:length(comparement)
     end
 end
 
-% MAlen=38;
+MAlen=55;
 N=3;
 
 Z(:,1)=round(StandardKalmanFilter(X,MAlen,N));

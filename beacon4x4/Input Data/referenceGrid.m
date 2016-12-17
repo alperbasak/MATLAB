@@ -1,9 +1,9 @@
 % import data
-data=sortrows(readtable('C:\Users\AHMET.BASAK\Documents\MATLAB\beacon4x4\Input Data\rawData\raw_edited\data_edited.csv','Delimiter',';'));
-load('C:\Users\AHMET.BASAK\Documents\MATLAB\beacon4x4\Input Data\utils.mat');
+data=sortrows(readtable('C:\Users\alper\Documents\MATLAB\beacon4x4\Input Data\rawData\raw_edited\data_edited.csv','Delimiter',';'));
+load('C:\Users\alper\Documents\MATLAB\beacon4x4\Input Data\utils.mat');
 
 %load time data
-time=readtable('C:\Users\AHMET.BASAK\Documents\MATLAB\beacon4x4\Input Data\rawData\raw_edited\beacons_datatime.xlsx','ReadVariableNames',false);
+time=readtable('C:\Users\alper\Documents\MATLAB\beacon4x4\Input Data\rawData\raw_edited\beacons_datatime.xlsx','ReadVariableNames',false);
 time=datetime(time{:,:},'InputFormat','dd.MM.yyyy HH:mm:ss');
 
 % %seperate actual and reference data (random)
